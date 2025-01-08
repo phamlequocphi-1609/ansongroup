@@ -294,7 +294,7 @@ body {
   color: #333;
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 20px 0px;
 }
 
 .section__about .accordion-item {
@@ -1109,4 +1109,116 @@ body {
   margin-top: 40px;
   text-align: center;
   font-size: 16px;
+}
+
+.section__table {
+  font-size: 13px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.section__table__content {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+}
+.petrolimex-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.unit {
+  color: #dc3545;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table th {
+  background: #14297a;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #14297a;
+  text-align: center;
+}
+
+.price-table td {
+  padding: 3px;
+  border: 1px solid #dee2e6;
+}
+
+.price-table td:nth-child(2),
+.price-table td:nth-child(3) {
+  text-align: right;
+}
+
+.price-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* ... CSS cho bảng giá như cũ ... */
+
+.world-price {
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+
+.world-price .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.world-price .unit {
+  color: #dc3545;
+  text-align: right;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.change {
+  color: #28a745;
+}
+
+.change::before {
+  content: "▲";
+  font-size: 10px;
+  margin-right: 2px;
+}
+
+.additional-links {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .price-table {
+    font-size: 14px;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 6px 8px;
+  }
 }
